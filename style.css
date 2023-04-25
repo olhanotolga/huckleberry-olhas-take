@@ -23,8 +23,15 @@ main {
 }
 
 p {
+	font-size: 1.25rem;
 	margin-block-start: 16px;
 	line-height: 1.5;
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.5rem;
 }
 strong {
 	color: hsl(160deg, 100%, 30%);
@@ -40,7 +47,7 @@ strong {
 	padding: 24px;
 }
 .intro-chunk {
-	max-width: 380px;
+	max-width: 415px;
 }
 .card {
 	border-bottom: 8px solid hsl(0deg, 0%, 60%);
