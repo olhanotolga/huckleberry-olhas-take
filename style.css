@@ -1,3 +1,21 @@
+:root {
+	/* typography sizing vars */
+	--font-s: 1rem;
+	--font-paragraph: 1.25rem;
+	--font-l: 1.5rem;
+	--font-heading: 2rem;
+	/* color vars */
+	--color-primary: hsl(160deg, 100%, 30%);
+	--color-secondary-lighter: hsl(45deg, 100%, 50%);
+	--color-secondary-darker: hsl(45deg, 100%, 40%);
+	--color-grays-black: hsl(0deg, 0%, 0%);
+	--color-grays-very-dark: hsl(0deg, 0%, 10%);
+	--color-grays-dark: hsl(0deg, 0%, 30%);
+	--color-grays-medium: hsl(0deg, 0%, 40%);
+	--color-grays-light: hsl(0deg, 0%, 60%);
+	--color-grays-white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -16,25 +34,25 @@ header {
 }
 
 main {
-	background-color: hsl(0deg, 0%, 40%);
+	background-color: var(--color-grays-medium);
 	padding-block-start: 72px;
 	padding-block-end: 72px;
-	border-top: 8px solid hsl(0deg, 0%, 60%);
+	border-top: 8px solid var(--color-grays-light);
 }
 
 p {
-	font-size: 1.25rem;
+	font-size: var(--font-paragraph);
 	margin-block-start: 16px;
 	line-height: 1.5;
 }
 h1 {
-	font-size: 2rem;
+	font-size: var(--font-heading);
 }
 h2 {
-	font-size: 1.5rem;
+	font-size: var(--font-l);
 }
 strong {
-	color: hsl(160deg, 100%, 30%);
+	color: var(--color-primary);
 }
 .max-width-wrapper {
 	max-width: 800px;
@@ -43,18 +61,18 @@ strong {
 
 }
 .card, .intro-chunk {
-	background-color: hsl(0deg, 0%, 100%);
+	background-color: var(--color-grays-white);
 	padding: 24px;
 }
 .intro-chunk {
 	max-width: 415px;
 }
 .card {
-	border-bottom: 8px solid hsl(0deg, 0%, 60%);
+	border-bottom: 8px solid var(--color-grays-light);
 }
 .indented-heading {
-	background-color: hsl(45deg, 100%, 50%);
-	border-bottom: 8px solid hsl(45deg, 100%, 40%);
+	background-color: var(--color-secondary-lighter);
+	border-bottom: 8px solid var(--color-secondary-darker);
 	padding: 16px 32px;
 	width: fit-content;
 	margin-inline-start: -32px;
